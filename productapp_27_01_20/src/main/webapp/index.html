@@ -41,7 +41,12 @@
             {
             width: 70px;
             border-radius:20px
+            }.margin-left-right
+            {
+            margin-left: 100px;
+            margin-right: 100px;
             }
+
 } 
     
     </style> 
@@ -53,7 +58,7 @@
 </div>
 <div class="center">
 <h2 class="display-5" >View all football Boots.</h2>
-<form action="submitsize">
+<form action="submitsize.view">
 <input title="size" type="number" class="cust-text-rounded" placeholder=" Size UK" name="bootsize"> 
 <div class="center">
 <button type="submit" class="btn btn-primary btn-circle btn-sm" >Go</button> 
@@ -64,14 +69,17 @@
 <h2 class="display-5">Add new boots for Sale.</h2>
 </div>
 <div class="center">
-<form action="submitdetail">
+<form action="submitdetail.do" >
+  
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="selleremail">
+  		  
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="selleremail" size="35">
+  	
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Select Boot Size</label>
-    <select class="form-control" id="exampleFormControlSelect1" name="sellersize">
+    <select class="form-control" id="exampleFormControlSelect1" name="sellersize" >
       <option>6</option>
       <option>7</option>
       <option>8</option>
@@ -82,7 +90,7 @@
   
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Enter Boot Name</label>
-    <input class="form-control" id="exampleFormControlTextarea1" placeholder="Boot Name" name="bootname"></input>
+    <input class="form-control" id="exampleFormControlTextarea1" placeholder="Boot Name" name="bootname" ></input>
   </div>
 
 <div class="center">
