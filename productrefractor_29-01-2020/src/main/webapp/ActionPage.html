@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style type="text/css"> 
+        h1 { 
+            color:black; 
+        } 
+        .xyz { 
+            background-size: auto; 
+            text-align: center; 
+            padding-top: 100px; 
+        } 
+        .btn-circle.btn-sm { 
+            width: 70px; 
+            height: 40px; 
+            padding: 4px 0px; 
+            border-radius: 15px; 
+            font-size: 15px; 
+            text-align: center;}
+            .cust-text-rounded
+            {
+            width: 70px;
+            border-radius:20px
+            }
+            .center {
+    text-align: center;
+    margin: 15px;}
+    .btn-circle.btn-lm { 
+            width: 100px; 
+            height: 40px; 
+            padding: 4px 0px; 
+            border-radius: 15px; 
+            font-size: 15px; 
+            text-align: center;
+            background-color: green;
+            border: none;}
+            .cust-text-rounded
+            {
+            width: 70px;
+            border-radius:20px
+            }.margin-left-right
+            {
+            margin-left: 100px;
+            margin-right: 100px;
+            }
+
+} 
+    
+    </style> 
+<meta charset="ISO-8859-1">
+<title>Football Boots</title>
+<body>
+<div class="center">
+<h1 class="display-2"><b>Football Boots For You</b></h1>
+</div>
+<div class="center">
+<h2 class="display-5" >View all football Boots.</h2>
+<form action="submitsize.view">
+<input title="size" type="number" class="cust-text-rounded" placeholder=" Size UK" name="bootsize"> 
+<div class="center">
+<button type="submit" class="btn btn-primary btn-circle btn-sm" >Go</button> 
+</div>
+</form>
+</div>
+<div class="center">
+<h2 class="display-5">Add new boots for Sale.</h2>
+</div>
+<div class="center">
+<form action="submitdetail.do" method="post">
+  
+  <div class="form-group" style="text-align: center;">
+    <label for="exampleFormControlInput1">Email address</label>
+  		  
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="selleremail"  >
+  	
+  </div>
+  <div class="form-group" style="text-align: center;">
+    <label for="exampleFormControlSelect1">Select Boot Size</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="sellersize" >
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+  </div>
+  
+  <div class="form-group" style="text-align: center;">
+    <label for="exampleFormControlTextarea1">Enter Boot Name</label>
+    <input class="form-control" id="exampleFormControlTextarea1" placeholder="Boot Name" name="bootname" ></input>
+  </div>
+
+<div class="center">
+<button type="submit" class="btn btn-primary btn-circle btn-lm">Add a Pair</button> 
+</div>
+</form>
+</div>
+
+</body>
+
+
+</head>
+<body>
+
+</body>
+</html>
