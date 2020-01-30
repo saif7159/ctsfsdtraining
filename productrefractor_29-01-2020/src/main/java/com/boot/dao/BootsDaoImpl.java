@@ -43,5 +43,29 @@ public class BootsDaoImpl implements BootsDao{
 		return query.getResultList();
 		
 	}
+	@Override
+	public Boots findById(int id) {
+		
+		manager.getTransaction().begin();
+		Boots b = manager.find(Boots.class, id);
+		manager.getTransaction().commit();
+		return b;
+		
+	}
+	@Override
+	public Boots updateBoot(Boots b) {
+		manager.getTransaction().begin();
+		manager.merge(b);
+		manager.getTransaction().commit();
+		return b;
+	}
+	@Override
+	public void deleteBoot(int id) {
+		Boots b = findById(id);
+		manager.getTransaction().begin();
+		manager.remove(b);
+		manager.getTransaction().commit();
+		
+	}
 
 }

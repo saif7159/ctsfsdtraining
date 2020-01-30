@@ -24,5 +24,20 @@ public class BootServiceImpl implements BootService {
 	public List<Boots> allBoots() {
 		return dao.allBoots();
 	}
+	@Override
+	public Boots findById(int id) {
+		
+		return dao.findById(id);
+	}
+	@Override
+	public Boots updateBoot(Boots b) {
+		
+		return dao.updateBoot(b);
+	}
+	@Override
+	public void deleteBoot(int id) {
+		dao.deleteBoot(id);
+		
+	}
 
 }

@@ -27,6 +27,18 @@
   	<description></description>
   	<servlet-class>com.boot.servlet.UpdateController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UpdateProcessor</servlet-name>
+  	<display-name>UpdateProcessor</display-name>
+  	<description></description>
+  	<servlet-class>com.boot.servlet.UpdateProcessor</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteProcessor</servlet-name>
+  	<display-name>DeleteProcessor</display-name>
+  	<description></description>
+  	<servlet-class>com.boot.servlet.DeleteProcessor</servlet-class>
+  </servlet>
 
   	
   <servlet-mapping>
@@ -45,6 +57,14 @@
  <servlet-mapping>
  	<servlet-name>UpdateController</servlet-name>
  	<url-pattern>/UpdateData.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>UpdateProcessor</servlet-name>
+ 	<url-pattern>/update.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>DeleteProcessor</servlet-name>
+ 	<url-pattern>/delete.do</url-pattern>
  </servlet-mapping>
  
   <welcome-file-list>

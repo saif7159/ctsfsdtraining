@@ -19,6 +19,7 @@
 <div class="center">
 <form action="update.do">
 <div class="form-group" style="text-align: center;">
+	<label>Update Boot with ID  </label><input type="hidden" value="${boots.id }" name="bid"><br>
     <label for="exampleFormControlInput1">Email address</label>
   		  
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="selleremail" value="" >
@@ -45,8 +46,10 @@
 </form>
 <h5 class="display-5">Or</h5><br>
 <h2 class="display-2">Delete Boot</h2>
-<label></label><br>
-<input>
+<form action="delete.do">
+<input name="did" value="${boots.id }" type="hidden">
+<button type="submit" style="background: red; border: none;" class="btn btn-primary btn-circle btn-lm">Delete</button>
+</form> 
 </div>
 
 </body>
