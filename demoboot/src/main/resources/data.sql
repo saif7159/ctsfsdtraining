@@ -1,0 +1,1 @@
+insert into Student(name,email) values('saif','xyzhk');
