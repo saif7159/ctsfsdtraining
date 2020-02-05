@@ -63,5 +63,11 @@ public class CustomerServiceImpl implements CustomerService {
 		return cdao.findByNameOrEmail(name, email);
 	}
 
+	@Override
+	public void deleteByName(String name) {
+		cdao.deleteByName(name);
+		
+	}
+
 
 }

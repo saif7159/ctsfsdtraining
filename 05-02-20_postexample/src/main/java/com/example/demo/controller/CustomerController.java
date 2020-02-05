@@ -66,4 +66,9 @@ public List<Customer> findById(@PathVariable String name, @PathVariable String e
 {
 	return cs.findByNameOrEmail(name, email);
 }
+@DeleteMapping("/customersName/{name}")
+public void deleteByName(@PathVariable String name)
+{
+	cs.deleteByName(name);
+}
 }

@@ -12,5 +12,6 @@ import com.example.demo.model.Customer;
 public interface CustDao extends JpaRepository<Customer, Integer> {
 public List<Customer> findByName(String name);
 public List<Customer> findByNameOrEmail(String name,String email);
+public void deleteByName(String name);
 
 }
