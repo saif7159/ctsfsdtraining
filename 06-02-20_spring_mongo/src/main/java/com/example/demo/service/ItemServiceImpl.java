@@ -51,6 +51,12 @@ public class ItemServiceImpl implements ItemService {
 		
 	}
 
+	@Override
+	public List<Items> findByNameAndId(String name, Integer id) {
+		
+		return idao.findByNameAndId(name, id);
+	}
+
 
 
 }

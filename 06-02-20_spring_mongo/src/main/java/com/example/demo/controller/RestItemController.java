@@ -39,6 +39,11 @@ public List<Items> findByName(@PathVariable String name)
 {
 	return is.findByName(name);
 }
+@GetMapping("/itemsname/{name}/{id}")
+public List<Items> findByName(@PathVariable String name, @PathVariable Integer id)
+{
+	return is.findByNameAndId(name, id);
+}
 @DeleteMapping("/items/{id}")
 public void deleteById(@PathVariable Integer id)
 {

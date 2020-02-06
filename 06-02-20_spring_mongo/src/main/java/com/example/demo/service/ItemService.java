@@ -10,6 +10,7 @@ public List<Items> getAllItems();
 public Items createItems(Items item);
 public Optional<Items> findById(Integer id);
 public List<Items> findByName(String name);
+public List<Items> findByNameAndId(String name,Integer id);
 public void deleteById(Integer id);
 public void deleteAll();
 }

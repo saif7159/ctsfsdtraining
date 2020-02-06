@@ -9,6 +9,6 @@ import com.example.demo.model.Items;
 @Repository
 public interface ItemsDao extends MongoRepository<Items, Integer> {
 public List<Items> findByName(String name);
-
+public List<Items> findByNameAndId(String name,Integer id);
 
 }
