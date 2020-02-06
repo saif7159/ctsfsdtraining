@@ -8,9 +8,11 @@ import com.example.demo.model.Items;
 public interface ItemService {
 public List<Items> getAllItems();
 public Items createItems(Items item);
-public Optional<Items> findById(Integer id);
+public Items findByIsbn(Integer isbn);
 public List<Items> findByName(String name);
-public List<Items> findByNameAndId(String name,Integer id);
-public void deleteById(Integer id);
+public List<Items> findByNameAndIsbn(String name,Integer isbn);
+public List<Items> findByNameOrIsbn(String name,Integer isbn);
+public Items updateItem(Items item);
+public void deleteByIsbn(Integer isbn);
 public void deleteAll();
 }

@@ -28,9 +28,9 @@ public class ItemServiceImpl implements ItemService {
 	}
 
 	@Override
-	public Optional<Items> findById(Integer id) {
+	public Items findByIsbn(Integer isbn) {
 	
-		return idao.findById(id);
+		return idao.findByIsbn(isbn);
 	}
 
 	@Override
@@ -40,8 +40,8 @@ public class ItemServiceImpl implements ItemService {
 	}
 
 	@Override
-	public void deleteById(Integer id) {
-		idao.deleteById(id);
+	public void deleteByIsbn(Integer isbn) {
+		idao.deleteByIsbn(isbn);
 		
 	}
 
@@ -52,9 +52,21 @@ public class ItemServiceImpl implements ItemService {
 	}
 
 	@Override
-	public List<Items> findByNameAndId(String name, Integer id) {
+	public List<Items> findByNameAndIsbn(String name, Integer isbn) {
 		
-		return idao.findByNameAndId(name, id);
+		return idao.findByNameAndIsbn(name, isbn);
+	}
+
+	@Override
+	public Items updateItem(Items item) {
+		
+		return idao.save(item);
+	}
+
+	@Override
+	public List<Items> findByNameOrIsbn(String name, Integer isbn) {
+		
+		return idao.findByNameOrIsbn(name, isbn);
 	}
 
 
