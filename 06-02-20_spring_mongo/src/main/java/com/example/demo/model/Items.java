@@ -28,4 +28,5 @@ private String name;
 private double rate;
 @JsonFormat(shape = Shape.STRING, pattern = "dd-MM-YYYY")
 private LocalDate date;
+private Product product;
 }
