@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Example</title>
+    <style>
+        form{
+            margin: 0 auto;
+            border: lightgrey solid 1px;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;  
+        }
+        body{
+            background-color:lightgray;
+        }
+        input[type="email"],[type="password"]
+        {
+            border: lightgray solid 1px;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 14px;
+            width: 100%;
+            
+        }
+        label{
+            font-size: 18px;
+        }
+        .myButton{
+            border-radius: 10px;
+            background-color:rgb(0, 132, 255);
+            font-size: 18px;
+            padding: 5px 10px 5px 10px;
+            color: #ffffff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1>Login</h1>
+    <p><label for="email">Email</label><br>
+    <input type = "email" placeholder="name@wxample.com" id="email"></p>
+    <p><label for="password">Password</label><br>
+    <input type = "password" id="password" placeholder="Password"></p>
+    <p><input type="submit"  class="myButton"></p>
+    </form>
+</body>
+</html>
