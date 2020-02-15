@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="storage"></h1>   
+<h2 id="firstname"></h2>    
+</body>
+<script>
+    if(typeof(localStorage)!=null)
+    {
+        document.getElementById('storage').innerHTML = "Local Storage Supported";
+        localStorage.name = 'Saif';
+        document.getElementById('firstname').innerHTML = localStorage.name;
+    }
+    else{
+        console.log('Not Supported');
+    }
+</script>
+</html>

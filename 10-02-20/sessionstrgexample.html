@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="counter"></h1>
+</body>
+<script>
+    if(sessionStorage.counter!=null)
+    {
+        sessionStorage.counter = Number(sessionStorage.counter)+1;
+
+    }
+    else
+    {
+        sessionStorage.counter = 1;
+    }
+    document.getElementById("counter").innerHTML = sessionStorage.counter;
+</script>
+</html>

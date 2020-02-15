@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button style="background-color: bisque; border-radius: 20px;" onclick="getLocation()">Show location</button>
+    <script>
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(fetchLocation,errorHandler);
+            }
+            else{
+                alert("Unable to get Current location");
+            }
+        }
+        function fetchLocation(position)
+        {
+            var longitude = position.coords.longitude;
+            var latitude = position.coords.latitude;
+            alert("Longitude"+longitude+"   Latitude"+latitude);
+        }
+        function errorHandler(error)
+        {
+            if(error.code==1)
+            {
+                alert("User denied permission");
+            }
+            
+        }
+        
+        
+    </script>
+</body>
+</html>
