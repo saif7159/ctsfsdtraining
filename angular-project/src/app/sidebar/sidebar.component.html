@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-lg-3">
+        <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+          </div></div>
+    <div class="col-lg-9">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Data Binding Test<br>{{ name }}<br>{{ name.length }}<br>{{ 'Welcome '+name}}<br>{{getMessage()}}
+        <br><button class="btn btn-primary" disabled={{isDisabled}}>Interpolation</button>
+        <br><button class="btn btn-success" [disabled]="isDisabled">Property</button>
+        <br><button class="btn btn-info" (click)="onClick()">Click Me</button> 
+        <br><h1 [class]="'text-danger'">This is text class binding</h1> 
+        <br><h1 [class]="cssStyle">This is text class binding</h1> 
+        <br><h1 [class]="getDemoCss()">{{ name }}</h1>
+        <br><h1 [class]="hasError? 'text-danger' : cssStyle">{{ name }}</h1> 
+        <br><h1 [ngClass]="special">{{ name }}</h1>  
+        <br><h1 [style.color]="'orange'">{{ name }}</h1> 
+    
+ 
+    </p>
+    </div>  
+    
+
+</div>
