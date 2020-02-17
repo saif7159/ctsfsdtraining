@@ -1,0 +1,15 @@
+<p>inputdecoratorexample works!</p>
+<h1>{{ demotext }}</h1>
+<h2>Name: {{ first }} {{ last }}</h2>
+<h2>Object call: {{model.firstn | uppercase}} {{model.lastn | lowercase}} {{model.email}}</h2>
+<h2>{{ model | json }}</h2>
+<button class="btn btn-primary" (click) = "sendToParent()">Send to Parent</button>
+<!--pipes examples-->
+<p>{{ date | date: "shortDate"}}</p>
+<p>{{ date }}</p>
+<p>{{ date | date: "longDate" }}</p>
+<p>{{ date | date: "longTime" }}</p>
+<p>{{ date | date: "shortTime" }}</p>
+<p>{{ 100 | currency: "GBP" }}</p>
+<p>{{ 42 | percent }}</p>
+<p>{{ 3 | number : "3.2-4" }}</p>

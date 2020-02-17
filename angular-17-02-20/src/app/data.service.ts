@@ -1,0 +1,17 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  employees = [{Id:101 ,firstname: "Saif", gender: "Male", email:"lksd@gmail.com", salary:64643},
+  {Id:102 ,firstname: "Lja", gender: "Male", email:"lksd@gmail.com", salary:54984},
+  {Id:103 ,firstname: "KLf", gender: "Female", email:"l435d@gmail.com", salary:57467},
+  {Id:104 ,firstname: "Lkjeo", gender: "Female", email:"1454sd@gmail.com", salary:65746},
+  {Id:105 ,firstname: "Clerk", gender: "Female", email:"bhatisd@gmail.com", salary:61111}];
+  constructor() { }
+  getEmployees()
+  {
+    return this.employees;
+  }
+}

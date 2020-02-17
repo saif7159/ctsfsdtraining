@@ -1,0 +1,7 @@
+<p>twowaytest works!</p>
+<!--Template Reference Variable Example-->
+<input type = "text" #myIp/>
+<button class = "btn btn-primary" (click) = onButtonClick(myIp.value)>Get Value</button>
+<!--Two way binding example using ngModel-->
+<h1>{{ twoway }}</h1>
+<input type = "text" [(ngModel)] = "twoway"/>
