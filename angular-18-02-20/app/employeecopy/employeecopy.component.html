@@ -1,0 +1,21 @@
+<h1 class="center">Employee Table Copy</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let e of employees">
+            <td>{{e.Id}}</td>
+            <td>{{e.firstname | title: e.gender }}</td>
+            <td>{{e.gender}}</td>
+            <td>{{e.email}}</td>
+            <td>{{e.salary | currency:"INR"}}</td>
+        </tr>
+    </tbody>
+</table>

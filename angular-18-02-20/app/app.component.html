@@ -1,0 +1,12 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<app-ngdirectivetest></app-ngdirectivetest>
+<app-twowaytest></app-twowaytest>
+<app-inputdecoratorexample [demotext] = "title" [first] = "firstname" [last] = "lastname" [model] = "ac" (childEvent) = "message = $event">
+</app-inputdecoratorexample>
+<h1>{{ message }}</h1>
+<app-employee ></app-employee>
+<app-employeecopy></app-employeecopy>
+<app-post></app-post>
+<app-footer></app-footer>
+

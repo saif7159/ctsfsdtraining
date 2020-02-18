@@ -1,0 +1,64 @@
+<p>ngdirectivetest works!</p>
+<!--If ng directive-->
+<h1 *ngIf="hasError">Condition Based Heading</h1>
+<!--Else ng directive-->
+<h1 *ngIf="!hasError">Condition Based heading else part</h1>
+<!--ng-template example-->
+<h1 *ngIf="hasError; else elseBlock; then: ifBlock"></h1>
+<ng-template #elseBlock>
+  <h1>Hello from template else</h1>
+</ng-template>
+<ng-template #ifBlock>
+  <h1>Hello from template if</h1>
+</ng-template>
+<button *ngIf="isLogged()" class="btn btn-primary">Logout</button>
+<button *ngIf="!isLogged()" class="btn btn-primary">Login</button>
+<div [ngSwitch]="day">
+  <p *ngSwitchCase="1">Monday</p>
+  <p *ngSwitchCase="2">Tuesday</p>
+  <p *ngSwitchCase="3">Wednesday</p>
+  <p *ngSwitchCase="4">Thursday</p>
+  <p *ngSwitchCase="5">Friday</p>
+  <p *ngSwitchCase="6">Saturday</p>
+  <p *ngSwitchCase="7">Sunday</p>
+  <p *ngSwitchDefault>Not a valid day</p>
+</div>
+<div [ngSwitch]="wday">
+  <p *ngSwitchCase="'Monday'">1</p>
+  <p *ngSwitchCase="'Tuesday'">2</p>
+  <p *ngSwitchCase="'Wednesday'">3</p>
+  <p *ngSwitchCase="'Thursday'">4</p>
+  <p *ngSwitchCase="'Friday'">5</p>
+  <p *ngSwitchCase="'Saturday'">6</p>
+  <p *ngSwitchCase="'Sunday'">7</p>
+  <p *ngSwitchDefault>Not a valid day</p>
+</div>
+<p *ngFor="let a of arr">{{ a }}</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let emp of Employees;
+        trackBy: trackByEmpId;
+        index as i;
+        odd as o;
+        even as e;
+        first as f;
+        last as l
+      "
+      [style.background]="o ? 'yellow' : 'grey'"
+    >
+      <td>{{ emp.eId }}</td>
+      <td>{{ emp.Name }}</td>
+      <td>{{ emp.Email }}</td>
+    </tr>
+  </tbody>
+  <button class="btn btn-primary" (click)="onButtonClick()">Refresh</button>
+</table>
