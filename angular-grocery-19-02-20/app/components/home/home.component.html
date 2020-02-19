@@ -1,0 +1,14 @@
+<h5 style="text-align: center;" class="display-5">All Categories</h5>
+
+<div class="container" >
+    <div class="row">
+        <div class="col-sm" *ngFor = "let cat of categories">
+        <div class="card" style="width: 18rem;" (click) = "selectCategory(cat)">
+            <img src= "http://rjtmobile.com/grocery/images/{{ cat.catImage }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">{{ cat.catName }}</h5>
+              </div>
+          </div>
+         </div>
+      </div>
+  </div>

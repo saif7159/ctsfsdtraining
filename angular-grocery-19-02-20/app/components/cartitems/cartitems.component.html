@@ -1,0 +1,29 @@
+<h4 class="display-4" style="text-align: center;" id="count" ></h4>
+
+<table class = "table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Description</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor = "let cart of cartItems">
+        <td><img src= "http://rjtmobile.com/grocery/images/{{ cart.image }}" class="card-img-top" alt="..."></td>
+        <td>{{ cart.productName }}</td>
+        <td>{{ cart.price | currency }}</td>
+        <td>{{ cart.description }}</td>
+        <td><button (click) = "deleteFromCart(cart)" ><i class="fas fa-trash-alt"></i></button></td>
+    </tr>
+</tbody>
+</table>
+<script>
+    var count = 0;
+    function getItemCount(){
+    count++;
+    document.getElementById("count").innerHTML = "Cart Items"+count;
+    }
+</script>
+
