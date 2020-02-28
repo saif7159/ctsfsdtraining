@@ -1,0 +1,6 @@
+server:
+  port: 8060
+spring:  application:    name: movie-client  h2:    console:      path: /console
+      enabled: true
+      settings:        web-allow-others: true
+eureka:  client:    serviceUrl:     defaultZone: http://localhost:8761/eureka/
